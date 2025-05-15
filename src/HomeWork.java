@@ -5,7 +5,7 @@ public class HomeWork {
         System.out.println("sumIs: " + sum);
         System.out.println("isEven: " + task3(5));
         System.out.println("doubleToInt: " + task4(5.67));
-        System.out.println("biggerNumberIs: " + task5(7,8));
+        System.out.println(task5(5,7));
         System.out.println("length is: " + task6("cotne"));
         System.out.println(task7(2,3));
         System.out.println(task7(2,2, 2));
@@ -29,9 +29,12 @@ public class HomeWork {
     }
 
     public static int task5(int a, int b) {
-        if(a>b) {
+        if (a == b) {
+            System.out.println("ორივე რიცხვი ტოლია: " + a);
             return a;
-        }else {
+        } else if (a > b) {
+            return a;
+        } else {
             return b;
         }
     }
